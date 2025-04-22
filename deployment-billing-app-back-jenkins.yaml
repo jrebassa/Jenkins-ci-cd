@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: billing-app-back-deployment-jenkins
+  namespace: billingapp
 spec:
   selector:
    matchLabels:
@@ -23,6 +24,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: billing-app-back-service-jenkins
+  namespace: billingapp
   labels:
     app: billing-app-back-jenkins
 spec:   
