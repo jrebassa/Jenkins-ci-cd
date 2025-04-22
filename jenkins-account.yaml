@@ -72,9 +72,9 @@ rules:
 ---
 apiVersion: v1
 kind: Secret
-namespace: billingapp
 metadata:
   name: jenkins-long-lived-secret
+  namespace: billingapp
   annotations:
     kubernetes.io/service-account.name: jenkins
 type: kubernetes.io/service-account-token
